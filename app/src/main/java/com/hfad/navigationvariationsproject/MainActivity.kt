@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.navigation.compose.rememberNavController
 import com.example.composenavigationpractice.complex_navigation.AppNavGraph2
+import com.example.composenavigationpractice.complex_navigation.AppNavTransitionGraph
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             var navController = rememberNavController()
-            AppNavGraph2(navController = navController)
+            AppNavTransitionGraph(navController = navController)
         }
     }
 }
